@@ -34,7 +34,7 @@ Chem-Station 記事:
 ## Contents
 
 - `ExceltoWord2.py`: Excel ファイルから `*_SI.docx` を生成する Python スクリプト
-- `templates/CheckList_rev_17.xlsx`: 公開用にメタデータを整理したテンプレート
+- `templates/CheckList_rev_18.xlsx`: 公開用にメタデータを整理したテンプレート
 - `docs/automator-quick-action.md`: macOS で右クリック実行するための設定手順
 - `docs/windows-exe.md`: Windows 用 `.exe` の使い方メモ
 - `reference/*.pdf`: 既存マニュアルの参照用 PDF
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 ### 1. テンプレート Excel を編集する
 
-- `templates/CheckList_rev_17.xlsx` をコピーして使用してください
+- `templates/CheckList_rev_18.xlsx` をコピーして使用してください
 - Python スクリプトは `Python` シートを読みます
 - 基本形式は `A列 = データタイトル`, `B列 = データ内容` です
 
