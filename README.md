@@ -15,6 +15,19 @@ Windows で `.exe` を使いたい場合は、ソースコードではなく Rel
 3. `ExceltoWord.exe` に `.xlsx` ファイルをドラッグ&ドロップする
 4. 入力 Excel と同じ場所に `*_SI.docx` が作成される
 
+## Mac Users
+
+Mac では Finder の右クリックから使えるように、Automator の Quick Action を設定してください。
+
+- Setup guide: [docs/automator-quick-action.md](docs/automator-quick-action.md)
+- Reference PDF: [reference/Automator_Quick_Action_Setup_Mac.pdf](reference/Automator_Quick_Action_Setup_Mac.pdf)
+
+使い方:
+1. `docs/automator-quick-action.md` を見ながら Quick Action を1回設定する
+2. 帰属チェック済みの `.xlsx` を右クリックする
+3. `Quick Action` から保存した名前を選ぶ
+4. 入力 Excel と同じ場所に `*_SI.docx` が作成される
+
 Chem-Station 記事:
 <https://www.chem-station.com/blog/2025/09/macro2.html>
 
@@ -38,43 +51,16 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-### 1. 仮想環境を作成する
-
-macOS / Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Windows PowerShell:
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-### 2. テンプレート Excel を編集する
+### 1. テンプレート Excel を編集する
 
 - `templates/CheckList_rev_17.xlsx` をコピーして使用してください
 - Python スクリプトは `Python` シートを読みます
 - 基本形式は `A列 = データタイトル`, `B列 = データ内容` です
 
-### 3. 実行する
+### 2. 実行する
 
-macOS / Linux:
-
-```bash
-python3 ExceltoWord2.py /path/to/帰属チェックリスト.xlsx
-```
-
-Windows:
-
-```powershell
-python .\ExceltoWord2.py .\帰属チェックリスト.xlsx
-```
+- Windows 利用者は Releases の `exe app for windows.zip` を使ってください
+- Mac 利用者は Automator の Quick Action を設定して右クリック実行してください
 
 成功すると、入力 Excel と同じ場所に `ファイル名_SI.docx` が保存されます。
 
@@ -99,6 +85,14 @@ Automator / Quick Action を使う方法を [`docs/automator-quick-action.md`](d
 - Direct download: [exe app for windows.zip](https://github.com/machub31/si-checklist-word-exporter/releases/latest/download/exe%20app%20for%20windows.zip)
 
 配布者向けのビルド手順も含めた説明は [`docs/windows-exe.md`](docs/windows-exe.md) を参照してください。
+
+## Developer Notes
+
+コマンドラインから直接使いたい場合は、依存関係を入れた上で次のように実行できます。
+
+```bash
+python3 ExceltoWord2.py /path/to/checklist.xlsx
+```
 
 ## Notes
 
