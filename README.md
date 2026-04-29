@@ -2,6 +2,19 @@
 
 新規化合物データの帰属チェックリストを、Supporting Information 用の Word 文章へ整形するための Python スクリプトとテンプレートです。
 
+## Windows Users
+
+Windows で `.exe` を使いたい場合は、ソースコードではなく Release からダウンロードしてください。
+
+- Latest Release: [Download from Releases](https://github.com/machub31/si-checklist-word-exporter/releases/latest)
+- Direct ZIP: [exe app for windows.zip](https://github.com/machub31/si-checklist-word-exporter/releases/latest/download/exe%20app%20for%20windows.zip)
+
+使い方:
+1. `exe app for windows.zip` をダウンロードする
+2. zip を展開して `ExceltoWord` フォルダを取り出す
+3. `ExceltoWord.exe` に `.xlsx` ファイルをドラッグ&ドロップする
+4. 入力 Excel と同じ場所に `*_SI.docx` が作成される
+
 Chem-Station 記事:
 <https://www.chem-station.com/blog/2025/09/macro2.html>
 
@@ -80,7 +93,12 @@ Automator / Quick Action を使う方法を [`docs/automator-quick-action.md`](d
 
 ## Windows で `.exe` を使いたい場合
 
-GitHub Actions で `ExceltoWord2.py` から Windows 用 `.exe` をビルドできるようにしています。ビルド成果物は `exe app for windows.zip` という名前で取得する想定です。詳細は [`docs/windows-exe.md`](docs/windows-exe.md) を参照してください。
+利用者は Releases から `exe app for windows.zip` をダウンロードしてください。
+
+- Release page: [Latest Release](https://github.com/machub31/si-checklist-word-exporter/releases/latest)
+- Direct download: [exe app for windows.zip](https://github.com/machub31/si-checklist-word-exporter/releases/latest/download/exe%20app%20for%20windows.zip)
+
+配布者向けのビルド手順も含めた説明は [`docs/windows-exe.md`](docs/windows-exe.md) を参照してください。
 
 ## Notes
 
