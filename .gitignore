@@ -2,7 +2,30 @@
 __pycache__/
 .venv/
 *.pyc
+
 ~$*.xlsx
 ~$*.docx
 *_SI.docx
+
 release-assets/
+
+# Archives / large files
+*.zip
+*.tar
+*.gz
+
+# Logs
+*.log
+*.out
+*.err
+
+# Temporary
+*.tmp
+*.temp
+
+# Executables
+*.exe
+
+# Build outputs
+dist/
+build/
