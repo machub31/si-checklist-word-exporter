@@ -9,6 +9,10 @@ Windows で `.exe` を使いたい場合は、ソースコードではなく Rel
 - Latest Release: [Download from Releases](https://github.com/machub31/si-checklist-word-exporter/releases/latest)
 - Direct ZIP: [exe app for windows.zip](https://github.com/machub31/si-checklist-word-exporter/releases/latest/download/exe%20app%20for%20windows.zip)
 
+はじめに:
+`CheckList_rev_n.xlsx`をダウンロードしてください。
+以下の.xlsxファイルといった表記は上記帰属チェックリストのxlsxファイルを指します。
+
 使い方:
 1. `exe app for windows.zip` をダウンロードする
 2. zip を展開して `ExceltoWord` フォルダを取り出す
