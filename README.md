@@ -8,7 +8,7 @@ Chem-Station 記事:
 ## Contents
 
 - `ExceltoWord2.py`: Excel ファイルから `*_SI.docx` を生成する Python スクリプト
-- `templates/帰属チェックリスト_ver17.xlsx`: 公開用にメタデータを整理したテンプレート
+- `templates/CheckList_rev_17.xlsx`: 公開用にメタデータを整理したテンプレート
 - `docs/automator-quick-action.md`: macOS で右クリック実行するための設定手順
 - `docs/windows-exe.md`: Windows 用 `.exe` の使い方メモ
 - `reference/*.pdf`: 既存マニュアルの参照用 PDF
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ### 2. テンプレート Excel を編集する
 
-- `templates/帰属チェックリスト_ver17.xlsx` をコピーして使用してください
+- `templates/CheckList_rev_17.xlsx` をコピーして使用してください
 - Python スクリプトは `Python` シートを読みます
 - 基本形式は `A列 = データタイトル`, `B列 = データ内容` です
 
@@ -80,7 +80,7 @@ Automator / Quick Action を使う方法を [`docs/automator-quick-action.md`](d
 
 ## Windows で `.exe` を使いたい場合
 
-このリポジトリには 484 MB の Windows 配布フォルダは含めていません。操作方法のみ [`docs/windows-exe.md`](docs/windows-exe.md) と `reference/ExceltoWord_manual.pdf` に残しています。
+GitHub Actions で `ExceltoWord2.py` から Windows 用 `.exe` をビルドできるようにしています。ビルド成果物は `exe app for windows.zip` という名前で取得する想定です。詳細は [`docs/windows-exe.md`](docs/windows-exe.md) を参照してください。
 
 ## Notes
 

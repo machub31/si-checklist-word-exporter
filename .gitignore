@@ -5,3 +5,4 @@ __pycache__/
 ~$*.xlsx
 ~$*.docx
 *_SI.docx
+release-assets/
