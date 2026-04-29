@@ -1,9 +1,5 @@
 # Windows `.exe` 版メモ
 
-Windows 64-bit 環境では、Python を使わず `.exe` 版で実行できます。
-
-現在の Windows 版は `ExceltoWord2.py` を元にビルドする想定です。つまり、13C の整合性チェックは旧 `ExceltoWord.py` の単純カウントではなく、`(2C)` のような明示個数を加算する新方式が反映されます。
-
 ## GitHub での作り方
 
 このリポジトリには GitHub Actions の workflow を入れてあります。
